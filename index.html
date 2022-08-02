@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>Support Ticket</header>
+    <main>
+      <form>
+        <div>
+          <label for="name">Full Name:</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your full name"
+          />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input id="email" type="email" name="email" required />
+        </div>
+        <div>
+          <label for="phone">Phone #:</label>
+          <input
+            id="phone"
+            type="text"
+            name="phone"
+            pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+            placeholder="xxx-xxx-xxxx"
+          />
+        </div>
+        <div>
+          <label for="form-message">Details:</label>
+          <textarea
+            id="form-message"
+            name="message"
+            autofocus="on"
+            required
+            maxlength="200"
+            placeholder="Please explain your problem in 200 characters or less."
+          ></textarea>
+        </div>
+        <div>
+          <label for="contact">Preferred method of contact:</label>
+          <select name="contact" id="contact" size="1">
+            <option value="call">Phone call</option>
+            <option value="text">Text message</option>
+            <option value="cemail">Email</option>
+          </select>
+        </div>
+        <div class="button">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
