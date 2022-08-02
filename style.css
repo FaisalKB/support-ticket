@@ -3,13 +3,13 @@ header {
   flex-direction: column;
   text-align: left;
   margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
 }
 
 body {
   padding: 10px;
   background-color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 input {
@@ -24,16 +24,10 @@ div {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin: 12px;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px;
+  justify-content: space-evenly;
 }
 
 button {
   margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.button {
-  display: flex;
-  justify-content: space-evenly;
 }
